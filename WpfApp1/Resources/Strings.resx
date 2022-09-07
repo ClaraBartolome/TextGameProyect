@@ -123,11 +123,17 @@
   <data name="alreadyOpened" xml:space="preserve">
     <value>Ya has abierto: [{0}].</value>
   </data>
+  <data name="askToOpen" xml:space="preserve">
+    <value>¿Quieres abrir [{0}]?</value>
+  </data>
   <data name="askUseKey" xml:space="preserve">
     <value>Parece que tienes la llave de [{0}] encima. ¿Quieres usarla?</value>
   </data>
   <data name="availableActions" xml:space="preserve">
     <value>Acciones disponibles:</value>
+  </data>
+  <data name="blocked" xml:space="preserve">
+    <value>Has cerrado con llave: [{0}].</value>
   </data>
   <data name="cantUseThis" xml:space="preserve">
     <value>No puedes utilizar esto así.</value>
@@ -216,6 +222,9 @@
   <data name="no" xml:space="preserve">
     <value>no</value>
   </data>
+  <data name="noDropThis" xml:space="preserve">
+    <value>No puedes tirar: [{0}].</value>
+  </data>
   <data name="noGrab" xml:space="preserve">
     <value>¡No puedes coger eso!</value>
   </data>
@@ -231,6 +240,9 @@
   <data name="northwest" xml:space="preserve">
     <value>noroeste</value>
   </data>
+  <data name="notesInInventory" xml:space="preserve">
+    <value>Notas en tu inventario:</value>
+  </data>
   <data name="notHere" xml:space="preserve">
     <value>[{0}] no esta aquí.</value>
   </data>
@@ -241,7 +253,7 @@
     <value>No puedes usar [{0}].</value>
   </data>
   <data name="noUseWith" xml:space="preserve">
-    <value>No puedes usar [{0}] with [{1}].</value>
+    <value>No puedes usar [{0}] con [{1}].</value>
   </data>
   <data name="open" xml:space="preserve">
     <value>abrir</value>
@@ -253,7 +265,10 @@
     <value>Parece que el camino esta bloqueado.</value>
   </data>
   <data name="pockets" xml:space="preserve">
-    <value>bolsilos</value>
+    <value>bolsillos</value>
+  </data>
+  <data name="read" xml:space="preserve">
+    <value>leer</value>
   </data>
   <data name="roomNotFound" xml:space="preserve">
     <value>Parece que ha habido un error, no puedo encontrar la habitacion.</value>
@@ -266,6 +281,9 @@
   </data>
   <data name="southwest" xml:space="preserve">
     <value>sureste</value>
+  </data>
+  <data name="unblocked" xml:space="preserve">
+    <value>Has abierto la cerradura de: [{0}].</value>
   </data>
   <data name="up" xml:space="preserve">
     <value>arriba</value>

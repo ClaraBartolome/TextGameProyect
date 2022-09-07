@@ -49,8 +49,23 @@ namespace Character
             textDisplayer.DisplayAction(resManager.rm.GetString("itemsInInventory"));
             foreach (var item in inventory)
             {
-                textDisplayer.DisplayItem(item.name);
+                if (item.itemType != ItemType.NOTE)
+                {
+                    textDisplayer.DisplayItem(item.name);
+                }
+                
             }
+            textDisplayer.Jumpline();
+            textDisplayer.DisplayAction(resManager.rm.GetString("notesInInventory"));
+            foreach (var item in inventory)
+            {
+                if (item.itemType == ItemType.NOTE)
+                {
+                    textDisplayer.DisplayItem(item.name);
+                }
+
+            }
+
         }
 
         public bool InInventory(Item i)

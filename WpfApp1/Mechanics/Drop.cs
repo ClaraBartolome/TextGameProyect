@@ -24,9 +24,17 @@ namespace TextGame.Mechanics
             if (world.ItemExists(entityToDrop) && player.InInventory(world.GetItem(entityToDrop)))
             {
                 Item item = world.GetItem(entityToDrop);
-                player.getRoom().items.Add(item.id);
-                player.DropItem(item);
-                textDisplayer.DisplayAction(String.Format(resManager.rm.GetString("itemDropped"), item.name));
+                if (item.itemType != ItemType.NOTE)
+                {
+                    player.getRoom().items.Add(item.id);
+                    player.DropItem(item);
+                    textDisplayer.DisplayAction(String.Format(resManager.rm.GetString("itemDropped"), item.name));
+                }
+                else
+                {
+                    textDisplayer.DisplayAction(String.Format(resManager.rm.GetString("noDropThis"), item.name));
+                }
+                
             }
             else
             {

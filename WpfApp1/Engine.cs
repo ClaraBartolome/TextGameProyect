@@ -77,6 +77,7 @@ public class GameEngine
             { resManager.rm.GetString("go to"),(List<string> input) => Movement.PlayerMovement(input) },
             { resManager.rm.GetString("go"),(List<string> input) => Movement.PlayerMovement(input) },
             { resManager.rm.GetString("use"),(List<string> input) => Use.PlayerUse(input) },
+            { resManager.rm.GetString("read"),(List<string> input) => Use.PlayerUse(input) },
             { resManager.rm.GetString("grab"),(List<string> input) => Grab.PlayerGrab(input) },
             { resManager.rm.GetString("drop"),(List<string> input) => Drop.PlayerDrop(input) },
             { resManager.rm.GetString("look"),(List<string> input) => Look.PlayerLook(input) },
@@ -150,7 +151,7 @@ public class GameEngine
             if (e.Key == System.Windows.Input.Key.Enter)
             {
                     textDisplayer.DisplayInput();
-                    if (nextAction.Equals("") && itemsToGrab.Count == 0)
+                    if (nextAction.Equals("") && itemsToGrab.Count.Equals(0))
                     {
                         Response(textDisplayer.GetPlayerInput());
                     }
@@ -177,6 +178,7 @@ public class GameEngine
                             Response(nextAction);
                         }
                     }
+                    itemsToGrab.Clear();
                 }
                 else
                 {
@@ -190,7 +192,7 @@ public class GameEngine
                 textDisplayer.DisplayAction(resManager.rm.GetString("noUnderstand"));
             }
             nextAction = "";
-            itemsToGrab.Clear();
+            
         }
 
         private void Response(string s)

@@ -25,7 +25,7 @@ namespace TextGame.Mechanics
             if (world.ItemExists(entityToGrab) && player.getRoom().ItemInRoom(world.GetItem(entityToGrab).id))
             {
                 Item item = world.GetItem(entityToGrab);
-                if (item.itemType == ItemType.FURNITURE)
+                if (item.itemType == ItemType.FURNITURE || item.itemType == ItemType.CHEST || item.itemType == ItemType.USABLE_FURNITURE)
                 {
                     textDisplayer.DisplayAction(resManager.rm.GetString("noGrab"));
                 }

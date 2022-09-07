@@ -88,6 +88,15 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a ¿Quieres abrir [{0}]?.
+        /// </summary>
+        internal static string askToOpen {
+            get {
+                return ResourceManager.GetString("askToOpen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Parece que tienes la llave de [{0}] encima. ¿Quieres usarla?.
         /// </summary>
         internal static string askUseKey {
@@ -102,6 +111,15 @@ namespace TextGameProyect.Resources {
         internal static string availableActions {
             get {
                 return ResourceManager.GetString("availableActions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Has cerrado con llave: [{0}]..
+        /// </summary>
+        internal static string blocked {
+            get {
+                return ResourceManager.GetString("blocked", resourceCulture);
             }
         }
         
@@ -358,6 +376,15 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a No puedes tirar: [{0}]..
+        /// </summary>
+        internal static string noDropThis {
+            get {
+                return ResourceManager.GetString("noDropThis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a ¡No puedes coger eso!.
         /// </summary>
         internal static string noGrab {
@@ -403,6 +430,15 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Notas en tu inventario:.
+        /// </summary>
+        internal static string notesInInventory {
+            get {
+                return ResourceManager.GetString("notesInInventory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a [{0}] no esta aquí..
         /// </summary>
         internal static string notHere {
@@ -430,7 +466,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a No puedes usar [{0}] with [{1}]..
+        ///   Busca una cadena traducida similar a No puedes usar [{0}] con [{1}]..
         /// </summary>
         internal static string noUseWith {
             get {
@@ -466,11 +502,20 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a bolsilos.
+        ///   Busca una cadena traducida similar a bolsillos.
         /// </summary>
         internal static string pockets {
             get {
                 return ResourceManager.GetString("pockets", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a leer.
+        /// </summary>
+        internal static string read {
+            get {
+                return ResourceManager.GetString("read", resourceCulture);
             }
         }
         
@@ -507,6 +552,15 @@ namespace TextGameProyect.Resources {
         internal static string southwest {
             get {
                 return ResourceManager.GetString("southwest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Has abierto la cerradura de: [{0}]..
+        /// </summary>
+        internal static string unblocked {
+            get {
+                return ResourceManager.GetString("unblocked", resourceCulture);
             }
         }
         

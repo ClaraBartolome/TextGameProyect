@@ -22,18 +22,18 @@ namespace GameWorld
 
         public static List<Item> notes = new List<Item>
         {
-            new Item(itemId: 3, itemName: "nota", desc: "Esta es una nota y al leerla te cuenta cosas", useMessage: "No puedes usar esto así", type: ItemType.NOTE),
+            new Item(itemId: 3, itemName: "nota", desc: "Esta es una nota y al leerla te cuenta cosas", useMessage: "Informacion importante para el jugador", type: ItemType.NOTE),
         };
 
         public static List<Key> keys = new List<Key>
         {
             new Key(keyId: 0, keyName:"Llave de la puerta de la habitación", desc: "Llave que abre la puerta de la habitación", openDoor: 0),
-            new Key(keyId: 1, keyName:"Llave", desc: "Es una llave que abre un cofre", openDoor: 2),
+            new Key(keyId: 1, keyName:"Llave", desc: "Es una llave que abre un cofre", useMessage: "No ves que sentido tiene usar una llave en el aire", openDoor: 2),
         };
 
         public static List<Chest> chests = new List<Chest>
         {
-            new Chest(chestId: 2, chestName: "Cofre de prueba", des: "Es un cofre de prueba", opened: false, blocked: false, keyIdDoor: 1, itemsId: new List<int> {3})
+            new Chest(chestId: 2, chestName: "Cofre", des: "Es un cofre de prueba", opened: false, blocked: true, keyIdDoor: 1, itemsId: new List<int> {3})
         };
 
         public static List<Door> doors = new List<Door>
@@ -101,11 +101,14 @@ namespace GameWorld
         {
             if (ItemExists(itemName))
             {
-                return Items.Find(i => i.name.RemoveAccent().ToLower().Equals(itemName));
+                if (Items.Find(i => i.name.RemoveAccent().ToLower().Equals(itemName)) != null)
+                {
+                    return Items.Find(i => i.name.RemoveAccent().ToLower().Equals(itemName));
+                }
             }
             return new Item();
-
         }
+
 
         public Door GetDoor(int doorId)
         {
