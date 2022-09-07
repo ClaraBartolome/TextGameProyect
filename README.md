@@ -86,7 +86,7 @@ This is an example of a XML of a Room:
     <id>0</id>
     <description>"Es una habitacion normal"</description>
     <story>
-      <page>"El diseñador entro, sin sabe muy bien que hacía ahí."</page>
+      <page>"El diseñador entro, sin saber muy bien que hacía ahí."</page>
       <page>"Finalmente, abrió su editor de texto y comenzó a crear unos cuantos xmls."</page>
     </story>
     <directions>
