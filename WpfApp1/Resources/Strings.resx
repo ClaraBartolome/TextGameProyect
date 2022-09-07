@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="alreadyClosed" xml:space="preserve">
-    <value>[{0}] ya estaba cerrada.</value>
+    <value>Ya has cerrado: [{0}].</value>
   </data>
   <data name="alreadyOpened" xml:space="preserve">
-    <value>[{0}] ya estaba abierta.</value>
+    <value>Ya has abierto: [{0}].</value>
   </data>
   <data name="askUseKey" xml:space="preserve">
     <value>Parece que tienes la llave de [{0}] encima. ¿Quieres usarla?</value>
@@ -139,7 +139,7 @@
     <value>Has cerrado: [{0}].</value>
   </data>
   <data name="closedWithKey" xml:space="preserve">
-    <value>La [{0}] esta cerrada con llave.</value>
+    <value>Parece que necesitas una llave para abrir [{0}].</value>
   </data>
   <data name="down" xml:space="preserve">
     <value>abajo</value>
@@ -173,6 +173,9 @@
   </data>
   <data name="grab" xml:space="preserve">
     <value>coger</value>
+  </data>
+  <data name="grabAllItems" xml:space="preserve">
+    <value>¿Coger todo?</value>
   </data>
   <data name="grabItem" xml:space="preserve">
     <value>¿Coger [{0}]?</value>

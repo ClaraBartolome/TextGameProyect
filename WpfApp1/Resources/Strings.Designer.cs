@@ -70,7 +70,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a [{0}] ya estaba cerrada..
+        ///   Busca una cadena traducida similar a Ya has cerrado: [{0}]..
         /// </summary>
         internal static string alreadyClosed {
             get {
@@ -79,7 +79,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a [{0}] ya estaba abierta..
+        ///   Busca una cadena traducida similar a Ya has abierto: [{0}]..
         /// </summary>
         internal static string alreadyOpened {
             get {
@@ -133,7 +133,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a La [{0}] esta cerrada con llave..
+        ///   Busca una cadena traducida similar a Parece que necesitas una llave para abrir [{0}]..
         /// </summary>
         internal static string closedWithKey {
             get {
@@ -237,6 +237,15 @@ namespace TextGameProyect.Resources {
         internal static string grab {
             get {
                 return ResourceManager.GetString("grab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a ¿Coger todo?.
+        /// </summary>
+        internal static string grabAllItems {
+            get {
+                return ResourceManager.GetString("grabAllItems", resourceCulture);
             }
         }
         

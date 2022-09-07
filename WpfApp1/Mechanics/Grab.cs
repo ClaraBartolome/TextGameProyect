@@ -34,8 +34,7 @@ namespace TextGame.Mechanics
                     player.inventory.Add(item);
                     player.getRoom().RemoveItem(item.id);
                     textDisplayer.DisplayAction(String.Format(resManager.rm.GetString("itemGrabbed"), item.name));
-                }
-                
+                }                
             }
             else
             {

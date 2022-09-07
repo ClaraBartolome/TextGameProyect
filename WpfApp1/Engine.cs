@@ -26,6 +26,7 @@ public class GameEngine
         private static GameResourceManager resManager = GameResourceManager.GetInstance();
 
         private string nextAction = "";
+        public List<int> itemsToGrab = new List<int>();
 
         public void SetNextAction(string s)
         {
@@ -149,11 +150,10 @@ public class GameEngine
             if (e.Key == System.Windows.Input.Key.Enter)
             {
                     textDisplayer.DisplayInput();
-                    if (nextAction.Equals(""))
+                    if (nextAction.Equals("") && itemsToGrab.Count == 0)
                     {
-                        //Response(textDisplayer.GetPlayerInput());
                         Response(textDisplayer.GetPlayerInput());
-                }
+                    }
                     else
                     {
                         BinaryResponse(textDisplayer.GetPlayerInput());
@@ -167,7 +167,21 @@ public class GameEngine
         {
             if (response.RemoveAccent().ToLower().Equals(resManager.rm.GetString("yes")))
             {
-                Response(nextAction);
+                if (itemsToGrab.Count > 0)
+                {
+                    foreach (int i in itemsToGrab)
+                    {
+                        if (world.ItemExists(i))
+                        {
+                            nextAction = resManager.rm.GetString("grab") + " " + world.GetItem(i).name;
+                            Response(nextAction);
+                        }
+                    }
+                }
+                else
+                {
+                    Response(nextAction);
+                }
             } else if (response.RemoveAccent().ToLower().Equals(resManager.rm.GetString("no")))
             {
             }
@@ -176,6 +190,7 @@ public class GameEngine
                 textDisplayer.DisplayAction(resManager.rm.GetString("noUnderstand"));
             }
             nextAction = "";
+            itemsToGrab.Clear();
         }
 
         private void Response(string s)

@@ -113,7 +113,9 @@ namespace TextGame.Mechanics
                                 textDisplayer.DisplayAction(String.Format(resManager.rm.GetString("opened"), chest.name));
                                 player.getRoom().items.AddRange(chest.itemsInside);
                                 ShowObjects(chest.itemsInside);
+                                engine.itemsToGrab.AddRange(chest.itemsInside);
                                 chest.itemsInside.Clear();
+                                textDisplayer.DisplayAction((resManager.rm.GetString("grabAllItems")));
                             }
                             else
                             {
