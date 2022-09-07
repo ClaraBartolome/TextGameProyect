@@ -70,6 +70,7 @@ Each Room in the game must be represented in an object. A Room has the following
 
 * **id**: Id who identifies the room. Must be unique and can't be repeated. 
 * **name**: The name of the room.
+* * **description**: Description of the room, this would appear each time the player enters.
 * **story**: The story of the game. What happens when the player enters the room for the first time. It's separated in pages.
 * **directions**: The directions which the player can follow to exit the room. There are 10 possible directions: north, norteast, east, southeast, south, southwest, west, northwest, up and down. By default is -1. You must put the id of the room in that direction so the player can go there.
 * **doors**: Marks the path who have a door. By default is -1. You must put the id of the door in that direction.
