@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<KeyList>
+  <Key>
+    <id>1</id>
+    <name>"llave"</name>
+    <description>"Es una llave normal"</description>
+    <type>Key</type>
+    <doorId>2</doorId>
+  </Key>
+  <Key>
+    <id>2</id>
+    <name>"llave2"</name>
+    <description>"Es una llave normal"</description>
+    <type>Key</type>
+    <doorId>0</doorId>
+  </Key>
+</KeyList> 

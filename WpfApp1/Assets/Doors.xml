@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<DoorList>
+  <Door>
+    <id>1</id>
+    <name>"puerta"</name>
+    <description>"Es una puerta"</description>
+    <open>false</open>
+    <blocked>true</blocked>
+    <keyId>0</keyId>
+  </Door>
+  <Door>
+    <id>4</id>
+    <name>"puerta"</name>
+    <description>"Es una puerta"</description>
+    <open>false</open>
+    <blocked>true</blocked>
+    <keyId>3</keyId>
+  </Door>
+</DoorList> 
