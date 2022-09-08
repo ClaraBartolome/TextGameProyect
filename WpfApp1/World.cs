@@ -16,7 +16,7 @@ namespace GameWorld
             new Room(0, "Habitacion principal", "Es una habitación normal, al norte ves una puerta y en el suelo una llave.",  new List<string>
             {
                 "Despiertas en una habitación, al fondo de la sala, ves una puerta."
-            }, roomItems: new List<int>{ 0, 1, 2 }, roomDirections: new List<int>{1, -1, -1, -1, -1, -1, -1, -1, -1, -1 }, roomDoors: new List<int>{ 0, -1, -1, -1, -1, -1, -1, -1, -1, -1 }),
+            }, roomItems: new List<int>{ 0, 1, 2, 4 }, roomDirections: new List<int>{1, -1, -1, -1, -1, -1, -1, -1, -1, -1 }, roomDoors: new List<int>{ 0, -1, -1, -1, -1, -1, -1, -1, -1, -1 }),
             new Room(1,"Habitacion final", "Has logrado salir.", end: true)
         };
 
@@ -36,28 +36,34 @@ namespace GameWorld
             new Chest(chestId: 2, chestName: "Cofre", des: "Es un cofre de prueba", opened: false, blocked: true, keyIdDoor: 1, itemsId: new List<int> {3})
         };
 
+        public static List<UsableFurniture> usableFurnitures = new List<UsableFurniture>
+        {
+            new UsableFurniture(id: 4, furName: "Botón", des: "Es un boton, parece que se puede pulsar", useMessage: "Has pulsado el boton, se oye un ruido a lo lejos", itemType: ItemType.USABLE_FURNITURE, containerId: 2, isUsed: false)
+        };
+
         public static List<Door> doors = new List<Door>
         {
             new Door(doorId: 0, doorName: "puerta de la habitación", des:"Puerta cerrada, parece que necesitas una llave para abrirla", opened: false, blocked: true, keyIdDoor: 0),
             new Door(doorId: 1, doorName: "puerta del puente de mando", opened: false, blocked: false),
-            new Door(doorId: 2, doorName: "puerta", des:"Una puerta normal",opened: false, blocked: false),
         };
     }
 
     public sealed class World
     {
-        private World(List<Room> roomsList = null, List<Door> doorsList = null, List<Key> keyList = null, List<Chest> chestList = null, List<Item> notesList = null) 
+        private World(List<Room> roomsList = null, List<Door> doorsList = null, List<Key> keyList = null, List<Chest> chestList = null, List<Item> notesList = null, List<UsableFurniture> usableFurnitures = null) 
         {
             this.Rooms = roomsList ?? new List<Room>();
             this.Doors = doorsList ?? new List<Door>();
             this.Keys = keyList ?? new List<Key>();
             this.Chests = chestList ?? new List<Chest>();
-            this.Notes = notesList ?? new List<Item>();
+            this.ItemsNoInteractables = notesList ?? new List<Item>();
+            this.UsableFurnitures = usableFurnitures ?? new List<UsableFurniture>();
             //ITEMS TIENE QUE TENERLAS TODOS LOS ITEMS PORQUE ES AL QUE VAMOS A IR A COMPROBAR SI EXISTEN
             this.Items = new List<Item>();
             this.Items.AddRange(this.Keys);
             this.Items.AddRange(this.Chests);
-            this.Items.AddRange(this.Notes);
+            this.Items.AddRange(this.ItemsNoInteractables);
+            this.Items.AddRange(this.UsableFurnitures);
         }
 
         private List<Room> Rooms { get; set; }
@@ -65,13 +71,15 @@ namespace GameWorld
         private List<Door> Doors { get; set; }
         private List<Key> Keys { get; set; }
         private List<Chest> Chests { get; set; }
-        private List<Item> Notes { get; set; }
+        private List<Item> ItemsNoInteractables { get; set; }
+
+        private List<UsableFurniture> UsableFurnitures { get; set; }
 
         #region singleton impl
         private static World _instance;
         private static readonly object _lock = new object();
 
-        public static World GetInstance(List<Room> roomsList = null, List<Door> doorsList = null, List<Key> keyList = null, List<Chest> chestList = null, List<Item> notesList = null)
+        public static World GetInstance(List<Room> roomsList = null, List<Door> doorsList = null, List<Key> keyList = null, List<Chest> chestList = null, List<Item> notesList = null, List < UsableFurniture > usableFurnitures = null)
         {
             if (_instance == null)
             {
@@ -80,7 +88,7 @@ namespace GameWorld
                     
                     if (_instance == null)
                     {
-                        _instance = new World(roomsList, doorsList, keyList, chestList, notesList);
+                        _instance = new World(roomsList, doorsList, keyList, chestList, notesList, usableFurnitures);
                     }
                 }
             }
@@ -223,6 +231,25 @@ namespace GameWorld
                 return Chests.Find(i => i.name.RemoveAccent().ToLower().Equals(itemName));
             }
             return new Chest();
+
+        }
+
+        public UsableFurniture GetUsFurniture(int itemId)
+        {
+            if (UsableFurnitures.Find(i => i.id == itemId) != null)
+            {
+                return UsableFurnitures.Find(i => i.id == itemId);
+            }
+            return new UsableFurniture();
+        }
+
+        public UsableFurniture GetUsFurniture(string itemName)
+        {
+            if (UsableFurnitures.Find(i => i.name.RemoveAccent().ToLower().Equals(itemName)) != null)
+            {
+                return UsableFurnitures.Find(i => i.name.RemoveAccent().ToLower().Equals(itemName));
+            }
+            return new UsableFurniture();
 
         }
 

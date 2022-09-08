@@ -70,6 +70,15 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Ya has usado: [{0}].
+        /// </summary>
+        internal static string already_used {
+            get {
+                return ResourceManager.GetString("already_used", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Ya has cerrado: [{0}]..
         /// </summary>
         internal static string alreadyClosed {
@@ -606,6 +615,15 @@ namespace TextGameProyect.Resources {
         internal static string yes {
             get {
                 return ResourceManager.GetString("yes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Has usado: [{0}].
+        /// </summary>
+        internal static string you_used {
+            get {
+                return ResourceManager.GetString("you_used", resourceCulture);
             }
         }
     }

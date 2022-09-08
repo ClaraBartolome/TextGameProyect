@@ -34,7 +34,12 @@ namespace TextGame.Mechanics
                 {
                     case ItemType.KEY:
                         {
-                            UseItemKey(firstItemName, secondItemName, textDisplayer, player);
+                            UseItemKey(firstItemName, secondItemName);
+                            break;
+                        }
+                    case ItemType.USABLE_FURNITURE:
+                        {
+                            UseUsableFurniture(firstItemName, secondItemName);
                             break;
                         }
                     case ItemType.NOTE:
@@ -84,7 +89,7 @@ namespace TextGame.Mechanics
             }
         }
 
-        private static void UseItemKey(string firstItemName, string secondItemName, TextDisplayer textDisplayer, Player player)
+        private static void UseItemKey(string firstItemName, string secondItemName)
         {
 
             Key firstItem = (Key)world.GetItem(firstItemName);
@@ -187,5 +192,59 @@ namespace TextGame.Mechanics
             }
         }
 
+        private static void UseUsableFurniture(string firstItemName, string secondItemName)
+        {
+            UsableFurniture button = world.GetUsFurniture(firstItemName);
+
+            if (secondItemName.Equals(""))
+            {
+                if (!button.used)
+                {
+                    if (world.DoorExists(button.containerId))
+                    {
+                        Door door = world.GetDoor(button.containerId);
+                        door.isBlocked = false;
+                        DisplayUseButtonMessage(button.name, button.message);
+                        textDisplayer.DisplayAction(String.Format(resManager.rm.GetString("unblocked"), door.name));
+                        button.used = true;
+                    }
+                    else if (world.ItemExists(button.containerId))
+                    {
+                        Chest chest = world.GetChest(button.containerId);
+                        chest.isBlocked = false;
+                        DisplayUseButtonMessage(button.name, button.message);
+                        textDisplayer.DisplayAction(String.Format(resManager.rm.GetString("unblocked"), chest.name));
+                        textDisplayer.DisplayAction(String.Format(resManager.rm.GetString("askToOpen"), chest.name));
+                        engine.SetNextAction(resManager.rm.GetString("open") + " " + chest.name);
+                        button.used = true;
+                    }
+                    else
+                    {
+                        textDisplayer.DisplayAction(String.Format(resManager.rm.GetString("noUse"), firstItemName));
+                    }
+                }
+                else
+                {
+                    textDisplayer.DisplayAction(String.Format(resManager.rm.GetString("already_used"), button.name));
+                }
+            }
+            else
+            {
+                textDisplayer.DisplayAction(String.Format(resManager.rm.GetString("noUseWith"), firstItemName, secondItemName));
+            }
+
+        }
+
+        private static void DisplayUseButtonMessage(string name, string message)
+        {
+            if (!message.Equals(""))
+            {
+                textDisplayer.DisplayAction(message);
+            }
+            else
+            {
+                textDisplayer.DisplayAction(String.Format(resManager.rm.GetString("you_used"), name));
+            }
+        }
     }
 }

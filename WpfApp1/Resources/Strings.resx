@@ -123,6 +123,9 @@
   <data name="alreadyOpened" xml:space="preserve">
     <value>Ya has abierto: [{0}].</value>
   </data>
+  <data name="already_used" xml:space="preserve">
+    <value>Ya has usado: [{0}]</value>
+  </data>
   <data name="askToOpen" xml:space="preserve">
     <value>¿Quieres abrir [{0}]?</value>
   </data>
@@ -299,5 +302,8 @@
   </data>
   <data name="yes" xml:space="preserve">
     <value>si</value>
+  </data>
+  <data name="you_used" xml:space="preserve">
+    <value>Has usado: [{0}]</value>
   </data>
 </root>
