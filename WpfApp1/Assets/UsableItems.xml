@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UsableItemsList>
+  <UsableFurniture>
+    <id>4</id>
+    <name>Botón</name>
+    <description>Es un boton, parece que se puede pulsar</description>
+    <useMessage>Has pulsado el boton, se oye un ruido a lo lejos</useMessage>
+    <itemType>USABLE_FURNITURE</itemType>
+    <containerId>2</containerId>
+    <used>false</used>
+    <endgameTrigger>false</endgameTrigger>
+  </UsableFurniture>
+</UsableItemsList>

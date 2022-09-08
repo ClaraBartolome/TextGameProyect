@@ -26,8 +26,6 @@ namespace Componentes
         [XmlArray(ElementName = "doors")]
         [XmlArrayItem(ElementName = "door")]
         public List<int> doors;
-        [XmlElement(ElementName = "endgame")]
-        public bool isEndGame = false;
         [XmlElement(ElementName = "visited")]
         public bool visited;
 
@@ -40,7 +38,7 @@ namespace Componentes
             this.directions = roomDirections ??  literales.dir_default.ToList<int>();
             this.items = roomItems ?? new List<int>();
             this.doors = roomDoors ?? literales.dir_default.ToList<int>();
-            this.isEndGame = end;
+            this.endgameTrigger = end;
             this.visited = visit;
         }
 

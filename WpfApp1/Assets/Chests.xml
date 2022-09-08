@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ChestList>
+  <Chest>
+    <id>2</id>
+    <name>Cofre</name>
+    <description>Es un cofre de prueba</description>
+    <useMessage>Un cofre cerrado con llave, no puedes usarlo sin una.</useMessage>
+    <open>false</open>
+    <blocked>true</blocked>
+    <keyId>1</keyId>
+    <itemType>CHEST</itemType>
+    <containerType>CHEST</containerType>
+    <itemsInside>
+      <item>3</item>
+    </itemsInside>
+    <endgameTrigger>false</endgameTrigger>
+  </Chest>
+</ChestList> 

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<NonUsableItemsList>
+  <Item>
+    <id>3</id>
+    <name>nota</name>
+    <description>Esta es una nota y al leerla te cuenta cosas</description>
+    <useMessage>Informacion importante para el jugador</useMessage>
+    <itemType>NOTE</itemType>
+    <endgameTrigger>false</endgameTrigger>
+  </Item>
+  <Item>
+    <id>5</id>
+    <name>retrete</name>
+    <description>Un retrete limpio como una patena</description>
+    <useMessage>No tienes ganas de ir ahora</useMessage>
+    <itemType>FURNITURE</itemType>
+    <endgameTrigger>false</endgameTrigger>
+  </Item>
+</NonUsableItemsList> 

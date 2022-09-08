@@ -1,19 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <DoorList>
   <Door>
-    <id>1</id>
-    <name>"puerta"</name>
-    <description>"Es una puerta"</description>
+    <id>0</id>
+    <name>puerta de la habitación</name>
+    <description>Puerta cerrada, parece que necesitas una llave para abrirla</description>
+    <useMessage>Necesitas una llave para abrirla</useMessage>
     <open>false</open>
     <blocked>true</blocked>
     <keyId>0</keyId>
-  </Door>
-  <Door>
-    <id>4</id>
-    <name>"puerta"</name>
-    <description>"Es una puerta"</description>
-    <open>false</open>
-    <blocked>true</blocked>
-    <keyId>3</keyId>
+    <type>DOOR</type>
+    <endgameTrigger>false</endgameTrigger>
   </Door>
 </DoorList> 

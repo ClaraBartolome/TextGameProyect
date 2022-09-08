@@ -2,27 +2,43 @@
 <RoomList>
   <room>
     <id>0</id>
-    <description>"Es una habitacion normal"</description>
+    <name>habitacion principal</name>
+    <description>Es una habitacion normal</description>
     <story>
-      <page>"page1"</page>
-      <page>"page2"</page>
+      <page>Despiertas en una habitación, al fondo de la sala, ves una puerta.</page>
+      <page>En el suelo, ves un cofre</page>
     </story>
     <directions>
       <direction>0</direction>
       <direction>-1</direction>
       <direction>-1</direction>
       <direction>-1</direction>
+      <direction>-1</direction>
+      <direction>-1</direction>
+      <direction>-1</direction>
+      <direction>-1</direction>
+      <direction>-1</direction>
+      <direction>-1</direction>
     </directions>
     <items>
       <itemId>0</itemId>
+      <itemId>1</itemId>
+      <itemId>2</itemId>
+      <itemId>4</itemId>
     </items>
     <doors>
       <door>0</door>
       <door>-1</door>
       <door>-1</door>
       <door>-1</door>
+      <door>-1</door>
+      <door>-1</door>
+      <door>-1</door>
+      <door>-1</door>
+      <door>-1</door>
+      <door>-1</door>
     </doors>
-    <endgame>false</endgame>
-    <visited>true</visited>
+    <endgameTrigger>false</endgameTrigger>
+    <visited>false</visited>
   </room>
 </RoomList> 

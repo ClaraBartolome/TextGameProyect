@@ -141,7 +141,7 @@ public class GameEngine
                 textDisplayer.Jumpline();
             }
             textDisplayer.DisplayAction(player.getRoom().description);
-             if (player.getRoom().isEndGame)
+             if (player.getRoom().endgameTrigger)
             {
                 Endgame();
             } 

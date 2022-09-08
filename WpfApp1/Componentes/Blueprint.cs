@@ -42,6 +42,9 @@ namespace TextGame.Componentes
         public bool used { get; set; }
     }
 }
+
+
+[Serializable]
 public enum ContainerType
 {
     DOOR, CHEST
