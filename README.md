@@ -62,6 +62,8 @@ First things first, here we have a World which include all the elements present 
 * **Chests**: Items which contains more items.
 * **Doors**: Doors who may or not block the path to exit the Room.
 
+**Important**: Each element inside of the world must have their own unique id. There are two groups which their members can repeat ids: Rooms and Items. This means, one item can have the same id that a room but one door can't have the same id that a chest.
+
 We are going to visit every one of them in the next points.
 
 ### Rooms
