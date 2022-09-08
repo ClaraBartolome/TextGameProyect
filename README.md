@@ -9,6 +9,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#images-in-game">Images in Game</a></li>
       </ul>
      </li>
      <li>
@@ -46,6 +47,9 @@ This project follows, or try to, the next points:
 * [Visual Studio](https://visualstudio.microsoft.com/es/)
 * [C#](https://es.wikipedia.org/wiki/C_Sharp)
 
+### Images in Game
+
+![ScreenCapture](GitAssets/screenCapture.PNG "Screencapture")
 
 <!-- DESIGNINFO -->
 
@@ -300,5 +304,6 @@ This is an example of a XML of a EndGame Tale:
 This is a list of the things I want to implement in the future, they may or not may be end implemented:
 
 - [ ] Multilenguage (Currently only working in spanish)
+- [ ] Puzzles (A container which needs a password to open)
 - [ ] NPCs
 - [ ] Combat system
