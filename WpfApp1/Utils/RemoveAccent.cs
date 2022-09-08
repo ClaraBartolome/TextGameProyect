@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// https://github.com/ClaraBartolome/TextGameProyect
+
 namespace StringExtensions
 {
     public static class myExtensions

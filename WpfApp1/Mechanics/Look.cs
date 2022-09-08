@@ -13,6 +13,8 @@ using TextGame.Componentes;
 using TextGame.Utils;
 using TextGameProyect.Utils;
 
+// https://github.com/ClaraBartolome/TextGameProyect
+
 namespace TextGame.Mechanics
 {
     public static class Look

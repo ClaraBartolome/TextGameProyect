@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Xml.Serialization;
 using TextGame.Componentes;
 
+// https://github.com/ClaraBartolome/TextGameProyect
+
 namespace Componentes
 {
     [Serializable]

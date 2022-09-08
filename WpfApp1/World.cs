@@ -7,6 +7,8 @@ using Componentes;
 using StringExtensions;
 using TextGame.Utils;
 
+// https://github.com/ClaraBartolome/TextGameProyect
+
 namespace GameWorld
 {
     public static class WorldData

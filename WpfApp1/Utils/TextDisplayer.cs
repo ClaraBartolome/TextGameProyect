@@ -14,6 +14,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+// https://github.com/ClaraBartolome/TextGameProyect
+
 namespace TextGame.Componentes
 {
     public class TextDisplayer

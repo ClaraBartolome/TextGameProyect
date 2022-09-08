@@ -7,6 +7,8 @@ using System.Xml.Serialization;
 using Literales;
 using TextGame.Componentes;
 
+// https://github.com/ClaraBartolome/TextGameProyect
+
 namespace Componentes
 {
     [XmlType("room")]

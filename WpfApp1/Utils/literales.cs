@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using TextGameProyect.Utils;
 
+// https://github.com/ClaraBartolome/TextGameProyect
+
 namespace Literales
 {
     

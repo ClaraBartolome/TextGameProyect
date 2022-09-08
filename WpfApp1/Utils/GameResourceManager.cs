@@ -4,6 +4,8 @@ using System.Reflection;
 using System.Resources;
 using System.Text;
 
+// https://github.com/ClaraBartolome/TextGameProyect
+
 namespace TextGameProyect.Utils
 {
     public class GameResourceManager

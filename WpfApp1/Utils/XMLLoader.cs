@@ -10,6 +10,8 @@ using System.Xml.Serialization;
 using TextGame.Componentes;
 using TextGameProyect.Componentes;
 
+// https://github.com/ClaraBartolome/TextGameProyect
+
 namespace TextGame.Utils
 {
     public static class XmlLoader

@@ -18,6 +18,8 @@ using System.Windows.Shapes;
 using TextGame.Componentes;
 using TextGame.Utils;
 
+// https://github.com/ClaraBartolome/TextGameProyect
+
 namespace WpfApp1
 {
 

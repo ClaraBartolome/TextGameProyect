@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using TextGame.Componentes;
 using TextGameProyect.Utils;
 
+// https://github.com/ClaraBartolome/TextGameProyect
+
 namespace Character
 {
     public class Player

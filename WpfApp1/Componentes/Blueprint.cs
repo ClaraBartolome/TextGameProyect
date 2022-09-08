@@ -7,6 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
+// https://github.com/ClaraBartolome/TextGameProyect
+
 namespace TextGame.Componentes
 {
     [XmlRoot("Blueprint")]
