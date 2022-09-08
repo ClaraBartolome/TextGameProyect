@@ -235,7 +235,6 @@
             <RowDefinition  Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <TextBlock x:Name="playerName" Text="Player: " HorizontalAlignment="Left"  Margin="10,10,0,10" VerticalAlignment="Top" FontFamily="Lucida Console" Foreground="#FFCFCCCC" FontSize="14" Grid.Row="1"/>
         <ScrollViewer Grid.Row="2" x:Name="scrollText">
             <TextBlock x:Name="textGame" TextWrapping="Wrap" LineHeight="16"  TextTrimming="CharacterEllipsis"  Margin="10,0,20,0" FontFamily="Lucida Console" Foreground="#FFCFCCCC" FontSize="14" Grid.Row="2" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
         </ScrollViewer>

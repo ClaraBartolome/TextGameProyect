@@ -16,7 +16,7 @@ namespace GameWorld
         
         public static List<Room> rooms = XmlLoader.LoadRooms();
         public static List<Door> doors = XmlLoader.LoadDoors();
-        public static List<Item> notes = XmlLoader.LoadNoInteractableItems();
+        public static List<Item> noInteractableItems = XmlLoader.LoadNoInteractableItems();
         public static List<Key> keys = XmlLoader.LoadKeys();
         public static List<Chest> chests = XmlLoader.LoadChests();
         public static List<UsableFurniture> usableFurnitures = XmlLoader.LoadInteractableItems();
