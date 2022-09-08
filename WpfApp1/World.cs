@@ -16,8 +16,8 @@ namespace GameWorld
             new Room(0, "Habitacion principal", "Es una habitación normal, al norte ves una puerta y en el suelo una llave.",  new List<string>
             {
                 "Despiertas en una habitación, al fondo de la sala, ves una puerta."
-            }, roomItems: new List<int>{ 0, 1, 2, 4 }, roomDirections: new List<int>{1, -1, -1, -1, -1, -1, -1, -1, -1, -1 }, roomDoors: new List<int>{ 0, -1, -1, -1, -1, -1, -1, -1, -1, -1 }),
-            new Room(1,"Habitacion final", "Has logrado salir.", end: true)
+            }, roomItems: new List<int>{ 0, 1, 2, 4 }, roomDirections: new List<int>{1, -1, -1, -1, -1, -1, -1, -1, -1, -1 }, roomDoors: new List<int>{ -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 }),
+            new Room(1,"Habitacion final", "", end: true)
         };
 
         public static List<Item> notes = new List<Item>
@@ -46,11 +46,16 @@ namespace GameWorld
             new Door(doorId: 0, doorName: "puerta de la habitación", des:"Puerta cerrada, parece que necesitas una llave para abrirla", opened: false, blocked: true, keyIdDoor: 0),
             new Door(doorId: 1, doorName: "puerta del puente de mando", opened: false, blocked: false),
         };
+
+        public static List<string> endGameTale = new List<string>
+            {
+                "Tras mucho esfuerzo, llegas al final."
+            };
     }
 
     public sealed class World
     {
-        private World(List<Room> roomsList = null, List<Door> doorsList = null, List<Key> keyList = null, List<Chest> chestList = null, List<Item> notesList = null, List<UsableFurniture> usableFurnitures = null) 
+        private World(List<Room> roomsList = null, List<Door> doorsList = null, List<Key> keyList = null, List<Chest> chestList = null, List<Item> notesList = null, List<UsableFurniture> usableFurnitures = null, List<string> endgameStory = null) 
         {
             this.Rooms = roomsList ?? new List<Room>();
             this.Doors = doorsList ?? new List<Door>();
@@ -58,6 +63,7 @@ namespace GameWorld
             this.Chests = chestList ?? new List<Chest>();
             this.ItemsNoInteractables = notesList ?? new List<Item>();
             this.UsableFurnitures = usableFurnitures ?? new List<UsableFurniture>();
+            this.EndgameStory = endgameStory ?? new List<string>();
             //ITEMS TIENE QUE TENERLAS TODOS LOS ITEMS PORQUE ES AL QUE VAMOS A IR A COMPROBAR SI EXISTEN
             this.Items = new List<Item>();
             this.Items.AddRange(this.Keys);
@@ -72,14 +78,17 @@ namespace GameWorld
         private List<Key> Keys { get; set; }
         private List<Chest> Chests { get; set; }
         private List<Item> ItemsNoInteractables { get; set; }
-
         private List<UsableFurniture> UsableFurnitures { get; set; }
+
+        private List<string> EndgameStory { get; set; }
+
+
 
         #region singleton impl
         private static World _instance;
         private static readonly object _lock = new object();
 
-        public static World GetInstance(List<Room> roomsList = null, List<Door> doorsList = null, List<Key> keyList = null, List<Chest> chestList = null, List<Item> notesList = null, List < UsableFurniture > usableFurnitures = null)
+        public static World GetInstance(List<Room> roomsList = null, List<Door> doorsList = null, List<Key> keyList = null, List<Chest> chestList = null, List<Item> notesList = null, List < UsableFurniture > usableFurnitures = null, List<string> endgameStory = null)
         {
             if (_instance == null)
             {
@@ -88,7 +97,7 @@ namespace GameWorld
                     
                     if (_instance == null)
                     {
-                        _instance = new World(roomsList, doorsList, keyList, chestList, notesList, usableFurnitures);
+                        _instance = new World(roomsList, doorsList, keyList, chestList, notesList, usableFurnitures, endgameStory);
                     }
                 }
             }
@@ -253,6 +262,10 @@ namespace GameWorld
 
         }
 
+        public List<string> GetEndStory()
+        {
+            return EndgameStory;
+        }
     }
 
 }

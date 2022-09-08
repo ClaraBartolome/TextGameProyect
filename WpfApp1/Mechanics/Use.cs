@@ -55,6 +55,10 @@ namespace TextGame.Mechanics
                             {
                                 Item item = world.GetItem(firstItemName);
                                 DisplayItemMessage(item.name, item.message);
+                                if (item.endgameTrigger)
+                                {
+                                    engine.Endgame();
+                                }
                             }
                             break;
                         }
@@ -207,6 +211,10 @@ namespace TextGame.Mechanics
                         DisplayUseButtonMessage(button.name, button.message);
                         textDisplayer.DisplayAction(String.Format(resManager.rm.GetString("unblocked"), door.name));
                         button.used = true;
+                        if (button.endgameTrigger)
+                        {
+                            engine.Endgame();
+                        }
                     }
                     else if (world.ItemExists(button.containerId))
                     {
@@ -214,8 +222,15 @@ namespace TextGame.Mechanics
                         chest.isBlocked = false;
                         DisplayUseButtonMessage(button.name, button.message);
                         textDisplayer.DisplayAction(String.Format(resManager.rm.GetString("unblocked"), chest.name));
-                        textDisplayer.DisplayAction(String.Format(resManager.rm.GetString("askToOpen"), chest.name));
-                        engine.SetNextAction(resManager.rm.GetString("open") + " " + chest.name);
+                        if (button.endgameTrigger)
+                        {
+                            engine.Endgame();
+                        }
+                        else
+                        {
+                            textDisplayer.DisplayAction(String.Format(resManager.rm.GetString("askToOpen"), chest.name));
+                            engine.SetNextAction(resManager.rm.GetString("open") + " " + chest.name);
+                        }
                         button.used = true;
                     }
                     else

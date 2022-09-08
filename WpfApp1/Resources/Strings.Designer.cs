@@ -205,6 +205,15 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a ¡Felicidades! Has logrado completar el juego. ¡Espero que hayas disfrutado!.
+        /// </summary>
+        internal static string endgame_text {
+            get {
+                return ResourceManager.GetString("endgame_text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a ¡Felicidades, has llegado al final!.
         /// </summary>
         internal static string endMessage {

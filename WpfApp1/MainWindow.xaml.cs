@@ -29,7 +29,7 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
-            World myWorld = World.GetInstance(roomsList: WorldData.rooms, doorsList: WorldData.doors, keyList: WorldData.keys, chestList: WorldData.chests, WorldData.notes, usableFurnitures: WorldData.usableFurnitures);
+            World myWorld = World.GetInstance(roomsList: WorldData.rooms, doorsList: WorldData.doors, keyList: WorldData.keys, chestList: WorldData.chests, WorldData.notes, usableFurnitures: WorldData.usableFurnitures, WorldData.endGameTale);
             textDisplayer = TextDisplayer.GetInstance(roomName, textGame, playerInput, scrollText);
             engine = GameEngine.GetInstance();
             playerInput.KeyDown += engine.playerInput_KeyDown;

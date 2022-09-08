@@ -1,5 +1,6 @@
 ﻿using Character;
 using Componentes;
+using Engine;
 using GameWorld;
 using Literales;
 using StringExtensions;
@@ -18,6 +19,7 @@ namespace TextGame.Mechanics
         private static World world = World.GetInstance();
         private static TextDisplayer textDisplayer = TextDisplayer.GetInstance();
         private static Player player = Player.GetInstance();
+        private static GameEngine engine = GameEngine.GetInstance();
         private static GameResourceManager resManager = GameResourceManager.GetInstance();
         private static List<string> default_directions = new List<string>
         {
@@ -80,15 +82,14 @@ namespace TextGame.Mechanics
 
         }
 
-        private static Boolean MoveToRoom(int roomId, Player player)
+        private static void MoveToRoom(int roomId, Player player)
         {
             Room auxRoom = world.GetRoom(roomId);
             if (auxRoom.id != -1)
             {
                 player.setRoom(auxRoom);
-                return true;
+                engine.GameLoop();
             }
-            return false;
         }
     }
 }

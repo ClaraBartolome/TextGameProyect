@@ -27,6 +27,7 @@ public class GameEngine
 
         private string nextAction = "";
         public List<int> itemsToGrab = new List<int>();
+        public bool engameTrigger = false;
 
         public void SetNextAction(string s)
         {
@@ -127,7 +128,7 @@ public class GameEngine
             }
         }
 
-        private void GameLoop()
+        public void GameLoop()
         {
             Room room = player.getRoom();
             textDisplayer.DisplayRoomName(room.name);
@@ -137,18 +138,35 @@ public class GameEngine
                 {
                     textDisplayer.DisplayAction(story);
                 }
+                textDisplayer.Jumpline();
             }
-            textDisplayer.Jumpline();
             textDisplayer.DisplayAction(player.getRoom().description);
-            if (player.getRoom().isEndGame)
+             if (player.getRoom().isEndGame)
             {
-                textDisplayer.DisplayAction(resManager.rm.GetString("endMessage"));
+                Endgame();
+            } 
+        }
+
+        public void Endgame()
+        {
+            List<string> text = world.GetEndStory();
+            if (text.Count != 0)
+            {
+                foreach (var page in text)
+                {
+                    textDisplayer.DisplayAction(page);
+                }
             }
+            else
+            {
+                textDisplayer.DisplayAction(resManager.rm.GetString("endgame_text"));
+            }
+            engameTrigger = true;
         }
 
         public void playerInput_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
         {
-            if (e.Key == System.Windows.Input.Key.Enter)
+            if (e.Key == System.Windows.Input.Key.Enter && !engameTrigger)
             {
                     textDisplayer.DisplayInput();
                     if (nextAction.Equals("") && itemsToGrab.Count.Equals(0))

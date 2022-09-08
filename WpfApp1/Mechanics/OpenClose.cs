@@ -71,6 +71,10 @@ namespace TextGame.Mechanics
                             if (action == resManager.rm.GetString("open"))
                             {
                                 textDisplayer.DisplayAction(String.Format(resManager.rm.GetString("opened"), door.name));
+                                if (door.endgameTrigger)
+                                {
+                                    engine.Endgame();
+                                }
                             }
                             else
                             {
@@ -119,12 +123,19 @@ namespace TextGame.Mechanics
                             if (action == resManager.rm.GetString("open"))
                             {
                                 textDisplayer.DisplayAction(String.Format(resManager.rm.GetString("opened"), chest.name));
-                                player.getRoom().items.AddRange(chest.itemsInside);
-                                ShowObjects(chest.itemsInside);
-                                List<int> listAux = chest.itemsInside.ToList<int>();
-                                engine.itemsToGrab = chest.itemsInside.ToList<int>();
-                                chest.itemsInside.Clear();
-                                textDisplayer.DisplayAction((resManager.rm.GetString("grabAllItems")));
+                                if (chest.endgameTrigger)
+                                {
+                                    engine.Endgame();
+                                }
+                                else
+                                {
+                                    player.getRoom().items.AddRange(chest.itemsInside);
+                                    ShowObjects(chest.itemsInside);
+                                    List<int> listAux = chest.itemsInside.ToList<int>();
+                                    engine.itemsToGrab = chest.itemsInside.ToList<int>();
+                                    chest.itemsInside.Clear();
+                                    textDisplayer.DisplayAction((resManager.rm.GetString("grabAllItems")));
+                                }
                             }
                             else
                             {

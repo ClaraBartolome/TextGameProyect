@@ -17,7 +17,7 @@ namespace Componentes
         public int keyId { get; set; }
         public ContainerType type { get; set; }
 
-        public Door(int doorId = -2, string doorName = "", string des = "", bool opened = true, bool blocked = false, int keyIdDoor = -1, ContainerType doorType = ContainerType.DOOR)
+        public Door(int doorId = -2, string doorName = "", string des = "", bool opened = true, bool blocked = false, int keyIdDoor = -1, ContainerType doorType = ContainerType.DOOR, bool end = false)
         {
             this.id = doorId;
             this.name = doorName;
@@ -26,6 +26,7 @@ namespace Componentes
             this.isBlocked = blocked;
             this.keyId = keyIdDoor;
             this.type = doorType;
+            this.endgameTrigger = end;
         }
 
         private Door() { }

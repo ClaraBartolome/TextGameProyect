@@ -162,6 +162,9 @@
   <data name="empty" xml:space="preserve">
     <value />
   </data>
+  <data name="endgame_text" xml:space="preserve">
+    <value>¡Felicidades! Has logrado completar el juego. ¡Espero que hayas disfrutado!</value>
+  </data>
   <data name="endMessage" xml:space="preserve">
     <value>¡Felicidades, has llegado al final!</value>
   </data>

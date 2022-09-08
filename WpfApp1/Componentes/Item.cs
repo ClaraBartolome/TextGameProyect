@@ -16,13 +16,14 @@ namespace Componentes
         [XmlElement(ElementName = "type")]
         internal ItemType itemType;
 
-        public Item(int itemId = -2, string itemName = "", string desc = "", string useMessage = "", ItemType type = ItemType.DEFAULT)
+        public Item(int itemId = -2, string itemName = "", string desc = "", string useMessage = "", ItemType type = ItemType.DEFAULT, bool end = false)
         {
             this.id = itemId;
             this.name = itemName;
             this.description = desc;
             this.message = useMessage;
             this.itemType = ItemType.DEFAULT;
+            this.endgameTrigger = end;
         }
 
         public Item()
@@ -53,7 +54,7 @@ namespace Componentes
 
         public UsableFurniture() { }
 
-        public UsableFurniture(int id = -2, string furName = "", string des = "", string useMessage = "", ItemType itemType = ItemType.USABLE_FURNITURE, int containerId = -2, bool isUsed = false) 
+        public UsableFurniture(int id = -2, string furName = "", string des = "", string useMessage = "", ItemType itemType = ItemType.USABLE_FURNITURE, int containerId = -2, bool isUsed = false, bool end = false) 
         {
             this.id = id;
             this.name = furName;
@@ -62,6 +63,7 @@ namespace Componentes
             this.itemType = itemType;
             this.containerId = containerId;
             this.used = isUsed;
+            this.endgameTrigger = end;
         }
     }
 
@@ -75,7 +77,7 @@ namespace Componentes
         public ContainerType type { get; set; }
         public List<int> itemsInside;
 
-        public Chest(int chestId = -2, string chestName = "", string des = "", string useMessage = "", ItemType itemType = ItemType.CHEST, bool opened = true, bool blocked = false, int keyIdDoor = -1, ContainerType doorType = ContainerType.CHEST, List<int> itemsId = null)
+        public Chest(int chestId = -2, string chestName = "", string des = "", string useMessage = "", ItemType itemType = ItemType.CHEST, bool opened = true, bool blocked = false, int keyIdDoor = -1, ContainerType doorType = ContainerType.CHEST, List<int> itemsId = null, bool end = false)
         {
             this.id = chestId;
             this.name = chestName;
@@ -87,6 +89,7 @@ namespace Componentes
             this.keyId = keyIdDoor;
             this.type = doorType;
             this.itemsInside = itemsId ?? new List<int>();
+            this.endgameTrigger = end;
         }
 
         private Chest() { }

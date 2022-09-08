@@ -23,6 +23,8 @@ namespace TextGame.Componentes
         public string description;
         [XmlElement(ElementName = "useMessage")]
         public string message;
+        [XmlElement(ElementName = "endgameTrigger")]
+        public bool endgameTrigger;
     }
 
 
