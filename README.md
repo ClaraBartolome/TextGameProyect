@@ -49,7 +49,7 @@ This project follows, or try to, the next points:
 
 ### Images in Game
 
-![ScreenCapture](GitAssets/screenCapture.png "Screencapture")
+![ScreenCapture](GitAssets/screenCapture.PNG "Screencapture")
 
 <!-- DESIGNINFO -->
 
