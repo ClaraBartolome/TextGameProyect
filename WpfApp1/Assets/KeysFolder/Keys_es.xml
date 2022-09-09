@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<KeyList>
+  <Key>
+    <id>0</id>
+    <name>Llave de la puerta de la habitación</name>
+    <description>Llave que abre la puerta de la habitación</description>
+    <useMessage>No ves que sentido tiene usar una llave en el aire</useMessage>
+    <itemType>KEY</itemType>
+    <containerId>0</containerId>
+    <endgameTrigger>true</endgameTrigger>
+  </Key>
+  <Key>
+    <id>1</id>
+    <name>Llave</name>
+    <description>Es una llave que abre un cofre</description>
+    <useMessage>No ves que sentido tiene usar una llave en el aire</useMessage>
+    <itemType>KEY</itemType>
+    <containerId>2</containerId>
+    <endgameTrigger>true</endgameTrigger>
+  </Key>
+</KeyList> 
