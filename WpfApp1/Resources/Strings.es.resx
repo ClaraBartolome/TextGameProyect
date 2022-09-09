@@ -118,195 +118,195 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="alreadyClosed" xml:space="preserve">
-    <value>You've already closed: [{0}].</value>
+    <value>Ya has cerrado: [{0}].</value>
   </data>
   <data name="alreadyOpened" xml:space="preserve">
-    <value>You've already opened: [{0}].</value>
+    <value>Ya has abierto: [{0}].</value>
   </data>
   <data name="already_used" xml:space="preserve">
-    <value>You've already used: [{0}]</value>
+    <value>Ya has usado: [{0}]</value>
   </data>
   <data name="askToOpen" xml:space="preserve">
-    <value>Do you want to open [{0}]?</value>
+    <value>¿Quieres abrir [{0}]?</value>
   </data>
   <data name="askUseKey" xml:space="preserve">
-    <value>It seems like you've got the key of  [{0}] in your pocket. Do you want to use it?</value>
+    <value>Parece que tienes la llave de [{0}] encima. ¿Quieres usarla?</value>
   </data>
   <data name="availableActions" xml:space="preserve">
-    <value>Available commands:</value>
+    <value>Acciones disponibles:</value>
   </data>
   <data name="blocked" xml:space="preserve">
-    <value>You've closed with key: [{0}].</value>
+    <value>Has cerrado con llave: [{0}].</value>
   </data>
   <data name="cantUseThis" xml:space="preserve">
-    <value>You can't use this like that.</value>
+    <value>No puedes utilizar esto así.</value>
   </data>
   <data name="close" xml:space="preserve">
-    <value>close</value>
+    <value>cerrar</value>
   </data>
   <data name="closed" xml:space="preserve">
-    <value>You've closed: [{0}].</value>
+    <value>Has cerrado: [{0}].</value>
   </data>
   <data name="closedWithKey" xml:space="preserve">
-    <value>It seems like you need a key to open:  [{0}].</value>
+    <value>Parece que necesitas una llave para abrir [{0}].</value>
   </data>
   <data name="down" xml:space="preserve">
-    <value>down</value>
+    <value>abajo</value>
   </data>
   <data name="drop" xml:space="preserve">
-    <value>drop</value>
+    <value>tirar</value>
   </data>
   <data name="east" xml:space="preserve">
-    <value>east</value>
+    <value>este</value>
   </data>
   <data name="empty" xml:space="preserve">
     <value />
   </data>
   <data name="endgame_text" xml:space="preserve">
-    <value>Congratulations! You've completed the game! I hope you enjoyed it!</value>
+    <value>¡Felicidades! Has logrado completar el juego. ¡Espero que hayas disfrutado!</value>
   </data>
   <data name="endMessage" xml:space="preserve">
-    <value>Congrats! You've made it until the end!</value>
+    <value>¡Felicidades, has llegado al final!</value>
   </data>
   <data name="exit" xml:space="preserve">
-    <value>exit</value>
+    <value>salir</value>
   </data>
   <data name="go" xml:space="preserve">
-    <value>go</value>
+    <value>ir</value>
   </data>
   <data name="go down" xml:space="preserve">
-    <value>go down</value>
+    <value>bajar</value>
   </data>
   <data name="go to" xml:space="preserve">
-    <value>go to</value>
+    <value>ir al</value>
   </data>
   <data name="go up" xml:space="preserve">
-    <value>go up</value>
+    <value>subir</value>
   </data>
   <data name="grab" xml:space="preserve">
-    <value>grab</value>
+    <value>coger</value>
   </data>
   <data name="grabAllItems" xml:space="preserve">
-    <value>Grab all items?</value>
+    <value>¿Coger todo?</value>
   </data>
   <data name="grabItem" xml:space="preserve">
-    <value>Grab [{0}]?</value>
+    <value>¿Coger [{0}]?</value>
   </data>
   <data name="help" xml:space="preserve">
-    <value>help</value>
+    <value>ayuda</value>
   </data>
   <data name="in" xml:space="preserve">
-    <value>in</value>
+    <value>en</value>
   </data>
   <data name="inventory" xml:space="preserve">
-    <value>inventory</value>
+    <value>inventario</value>
   </data>
   <data name="itemDropped" xml:space="preserve">
-    <value>You've dropped: [{0}].</value>
+    <value>Has tirado: [{0}].</value>
   </data>
   <data name="itemGrabbed" xml:space="preserve">
-    <value>You've grabbed [{0}].</value>
+    <value>Has cogido: [{0}].</value>
   </data>
   <data name="itemNotInInventory" xml:space="preserve">
-    <value>You don't have: [{0}].</value>
+    <value>No tienes: [{0}].</value>
   </data>
   <data name="itemsFound" xml:space="preserve">
-    <value>Items found:</value>
+    <value>Objetos encontrados:</value>
   </data>
   <data name="itemsInInventory" xml:space="preserve">
-    <value>Items in your inventory:</value>
+    <value>Objetos en tu inventario:</value>
   </data>
   <data name="itemsInSight" xml:space="preserve">
-    <value>Items in sight:</value>
+    <value>Objetos a la vista:</value>
   </data>
   <data name="look" xml:space="preserve">
-    <value>look</value>
+    <value>mirar</value>
   </data>
   <data name="lookAround" xml:space="preserve">
-    <value>around</value>
+    <value>alrededor</value>
   </data>
   <data name="no" xml:space="preserve">
     <value>no</value>
   </data>
   <data name="noDropThis" xml:space="preserve">
-    <value>You can't drop: [{0}].</value>
+    <value>No puedes tirar: [{0}].</value>
   </data>
   <data name="noGrab" xml:space="preserve">
-    <value>You can't grab this!</value>
+    <value>¡No puedes coger eso!</value>
   </data>
   <data name="noPath" xml:space="preserve">
-    <value>You can't go there!</value>
+    <value>¡No puedes ir por ahi!</value>
   </data>
   <data name="north" xml:space="preserve">
-    <value>north</value>
+    <value>norte</value>
   </data>
   <data name="northeast" xml:space="preserve">
-    <value>northeast</value>
+    <value>noreste</value>
   </data>
   <data name="northwest" xml:space="preserve">
-    <value>northwest</value>
+    <value>noroeste</value>
   </data>
   <data name="notesInInventory" xml:space="preserve">
-    <value>Notes in your inventory:</value>
+    <value>Notas en tu inventario:</value>
   </data>
   <data name="notHere" xml:space="preserve">
-    <value>[{0}] isn't here.</value>
+    <value>[{0}] no esta aquí.</value>
   </data>
   <data name="noUnderstand" xml:space="preserve">
-    <value>I didn't understand you.</value>
+    <value>No te he entendido.</value>
   </data>
   <data name="noUse" xml:space="preserve">
-    <value>You can't use [{0}].</value>
+    <value>No puedes usar [{0}].</value>
   </data>
   <data name="noUseWith" xml:space="preserve">
-    <value>You can't use [{0}] with [{1}].</value>
+    <value>No puedes usar [{0}] con [{1}].</value>
   </data>
   <data name="open" xml:space="preserve">
-    <value>open</value>
+    <value>abrir</value>
   </data>
   <data name="opened" xml:space="preserve">
-    <value>You opened: [{0}].</value>
+    <value>Has abierto: [{0}].</value>
   </data>
   <data name="pathBlocked" xml:space="preserve">
-    <value>It seems like the path is blocked.</value>
+    <value>Parece que el camino esta bloqueado.</value>
   </data>
   <data name="pockets" xml:space="preserve">
-    <value>pockets</value>
+    <value>bolsillos</value>
   </data>
   <data name="read" xml:space="preserve">
-    <value>read</value>
+    <value>leer</value>
   </data>
   <data name="roomNotFound" xml:space="preserve">
-    <value>It seems like I can't find this room.</value>
+    <value>Parece que ha habido un error, no puedo encontrar la habitacion.</value>
   </data>
   <data name="south" xml:space="preserve">
-    <value>south</value>
+    <value>sur</value>
   </data>
   <data name="southeast" xml:space="preserve">
-    <value>southeast</value>
+    <value>sureste</value>
   </data>
   <data name="southwest" xml:space="preserve">
-    <value>southwest</value>
+    <value>suroeste</value>
   </data>
   <data name="unblocked" xml:space="preserve">
-    <value>You opened the keylock of: [{0}].</value>
+    <value>Has abierto la cerradura de: [{0}].</value>
   </data>
   <data name="up" xml:space="preserve">
-    <value>up</value>
+    <value>arriba</value>
   </data>
   <data name="use" xml:space="preserve">
-    <value>use</value>
+    <value>usar</value>
   </data>
   <data name="west" xml:space="preserve">
-    <value>west</value>
+    <value>oeste</value>
   </data>
   <data name="with" xml:space="preserve">
-    <value>with</value>
+    <value>con</value>
   </data>
   <data name="yes" xml:space="preserve">
-    <value>yes</value>
+    <value>si</value>
   </data>
   <data name="you_used" xml:space="preserve">
-    <value>You used: [{0}]</value>
+    <value>Has usado: [{0}]</value>
   </data>
 </root>

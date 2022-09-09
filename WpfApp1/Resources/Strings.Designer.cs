@@ -61,7 +61,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a en.
+        ///   Busca una cadena traducida similar a in.
         /// </summary>
         internal static string _in {
             get {
@@ -70,7 +70,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Ya has usado: [{0}].
+        ///   Busca una cadena traducida similar a You&apos;ve already used: [{0}].
         /// </summary>
         internal static string already_used {
             get {
@@ -79,7 +79,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Ya has cerrado: [{0}]..
+        ///   Busca una cadena traducida similar a You&apos;ve already closed: [{0}]..
         /// </summary>
         internal static string alreadyClosed {
             get {
@@ -88,7 +88,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Ya has abierto: [{0}]..
+        ///   Busca una cadena traducida similar a You&apos;ve already opened: [{0}]..
         /// </summary>
         internal static string alreadyOpened {
             get {
@@ -97,7 +97,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a ¿Quieres abrir [{0}]?.
+        ///   Busca una cadena traducida similar a Do you want to open [{0}]?.
         /// </summary>
         internal static string askToOpen {
             get {
@@ -106,7 +106,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Parece que tienes la llave de [{0}] encima. ¿Quieres usarla?.
+        ///   Busca una cadena traducida similar a It seems like you&apos;ve got the key of  [{0}] in your pocket. Do you want to use it?.
         /// </summary>
         internal static string askUseKey {
             get {
@@ -115,7 +115,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Acciones disponibles:.
+        ///   Busca una cadena traducida similar a Available commands:.
         /// </summary>
         internal static string availableActions {
             get {
@@ -124,7 +124,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Has cerrado con llave: [{0}]..
+        ///   Busca una cadena traducida similar a You&apos;ve closed with key: [{0}]..
         /// </summary>
         internal static string blocked {
             get {
@@ -133,7 +133,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a No puedes utilizar esto así..
+        ///   Busca una cadena traducida similar a You can&apos;t use this like that..
         /// </summary>
         internal static string cantUseThis {
             get {
@@ -142,7 +142,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a cerrar.
+        ///   Busca una cadena traducida similar a close.
         /// </summary>
         internal static string close {
             get {
@@ -151,7 +151,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Has cerrado: [{0}]..
+        ///   Busca una cadena traducida similar a You&apos;ve closed: [{0}]..
         /// </summary>
         internal static string closed {
             get {
@@ -160,7 +160,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Parece que necesitas una llave para abrir [{0}]..
+        ///   Busca una cadena traducida similar a It seems like you need a key to open:  [{0}]..
         /// </summary>
         internal static string closedWithKey {
             get {
@@ -169,7 +169,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a abajo.
+        ///   Busca una cadena traducida similar a down.
         /// </summary>
         internal static string down {
             get {
@@ -178,7 +178,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a tirar.
+        ///   Busca una cadena traducida similar a drop.
         /// </summary>
         internal static string drop {
             get {
@@ -187,7 +187,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a este.
+        ///   Busca una cadena traducida similar a east.
         /// </summary>
         internal static string east {
             get {
@@ -205,7 +205,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a ¡Felicidades! Has logrado completar el juego. ¡Espero que hayas disfrutado!.
+        ///   Busca una cadena traducida similar a Congratulations! You&apos;ve completed the game! I hope you enjoyed it!.
         /// </summary>
         internal static string endgame_text {
             get {
@@ -214,7 +214,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a ¡Felicidades, has llegado al final!.
+        ///   Busca una cadena traducida similar a Congrats! You&apos;ve made it until the end!.
         /// </summary>
         internal static string endMessage {
             get {
@@ -223,7 +223,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a salir.
+        ///   Busca una cadena traducida similar a exit.
         /// </summary>
         internal static string exit {
             get {
@@ -232,7 +232,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a ir.
+        ///   Busca una cadena traducida similar a go.
         /// </summary>
         internal static string go {
             get {
@@ -241,7 +241,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a bajar.
+        ///   Busca una cadena traducida similar a go down.
         /// </summary>
         internal static string go_down {
             get {
@@ -250,7 +250,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a ir al.
+        ///   Busca una cadena traducida similar a go to.
         /// </summary>
         internal static string go_to {
             get {
@@ -259,7 +259,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a subir.
+        ///   Busca una cadena traducida similar a go up.
         /// </summary>
         internal static string go_up {
             get {
@@ -268,7 +268,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a coger.
+        ///   Busca una cadena traducida similar a grab.
         /// </summary>
         internal static string grab {
             get {
@@ -277,7 +277,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a ¿Coger todo?.
+        ///   Busca una cadena traducida similar a Grab all items?.
         /// </summary>
         internal static string grabAllItems {
             get {
@@ -286,7 +286,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a ¿Coger [{0}]?.
+        ///   Busca una cadena traducida similar a Grab [{0}]?.
         /// </summary>
         internal static string grabItem {
             get {
@@ -295,7 +295,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a ayuda.
+        ///   Busca una cadena traducida similar a help.
         /// </summary>
         internal static string help {
             get {
@@ -304,7 +304,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a inventario.
+        ///   Busca una cadena traducida similar a inventory.
         /// </summary>
         internal static string inventory {
             get {
@@ -313,7 +313,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Has tirado: [{0}]..
+        ///   Busca una cadena traducida similar a You&apos;ve dropped: [{0}]..
         /// </summary>
         internal static string itemDropped {
             get {
@@ -322,7 +322,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Has cogido: [{0}]..
+        ///   Busca una cadena traducida similar a You&apos;ve grabbed [{0}]..
         /// </summary>
         internal static string itemGrabbed {
             get {
@@ -331,7 +331,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a No tienes: [{0}]..
+        ///   Busca una cadena traducida similar a You don&apos;t have: [{0}]..
         /// </summary>
         internal static string itemNotInInventory {
             get {
@@ -340,7 +340,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Objetos encontrados:.
+        ///   Busca una cadena traducida similar a Items found:.
         /// </summary>
         internal static string itemsFound {
             get {
@@ -349,7 +349,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Objetos en tu inventario:.
+        ///   Busca una cadena traducida similar a Items in your inventory:.
         /// </summary>
         internal static string itemsInInventory {
             get {
@@ -358,7 +358,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Objetos a la vista:.
+        ///   Busca una cadena traducida similar a Items in sight:.
         /// </summary>
         internal static string itemsInSight {
             get {
@@ -367,7 +367,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a mirar.
+        ///   Busca una cadena traducida similar a look.
         /// </summary>
         internal static string look {
             get {
@@ -376,7 +376,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a alrededor.
+        ///   Busca una cadena traducida similar a around.
         /// </summary>
         internal static string lookAround {
             get {
@@ -394,7 +394,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a No puedes tirar: [{0}]..
+        ///   Busca una cadena traducida similar a You can&apos;t drop: [{0}]..
         /// </summary>
         internal static string noDropThis {
             get {
@@ -403,7 +403,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a ¡No puedes coger eso!.
+        ///   Busca una cadena traducida similar a You can&apos;t grab this!.
         /// </summary>
         internal static string noGrab {
             get {
@@ -412,7 +412,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a ¡No puedes ir por ahi!.
+        ///   Busca una cadena traducida similar a You can&apos;t go there!.
         /// </summary>
         internal static string noPath {
             get {
@@ -421,7 +421,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a norte.
+        ///   Busca una cadena traducida similar a north.
         /// </summary>
         internal static string north {
             get {
@@ -430,7 +430,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a noreste.
+        ///   Busca una cadena traducida similar a northeast.
         /// </summary>
         internal static string northeast {
             get {
@@ -439,7 +439,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a noroeste.
+        ///   Busca una cadena traducida similar a northwest.
         /// </summary>
         internal static string northwest {
             get {
@@ -448,7 +448,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Notas en tu inventario:.
+        ///   Busca una cadena traducida similar a Notes in your inventory:.
         /// </summary>
         internal static string notesInInventory {
             get {
@@ -457,7 +457,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a [{0}] no esta aquí..
+        ///   Busca una cadena traducida similar a [{0}] isn&apos;t here..
         /// </summary>
         internal static string notHere {
             get {
@@ -466,7 +466,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a No te he entendido..
+        ///   Busca una cadena traducida similar a I didn&apos;t understand you..
         /// </summary>
         internal static string noUnderstand {
             get {
@@ -475,7 +475,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a No puedes usar [{0}]..
+        ///   Busca una cadena traducida similar a You can&apos;t use [{0}]..
         /// </summary>
         internal static string noUse {
             get {
@@ -484,7 +484,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a No puedes usar [{0}] con [{1}]..
+        ///   Busca una cadena traducida similar a You can&apos;t use [{0}] with [{1}]..
         /// </summary>
         internal static string noUseWith {
             get {
@@ -493,7 +493,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a abrir.
+        ///   Busca una cadena traducida similar a open.
         /// </summary>
         internal static string open {
             get {
@@ -502,7 +502,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Has abierto: [{0}]..
+        ///   Busca una cadena traducida similar a You opened: [{0}]..
         /// </summary>
         internal static string opened {
             get {
@@ -511,7 +511,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Parece que el camino esta bloqueado..
+        ///   Busca una cadena traducida similar a It seems like the path is blocked..
         /// </summary>
         internal static string pathBlocked {
             get {
@@ -520,7 +520,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a bolsillos.
+        ///   Busca una cadena traducida similar a pockets.
         /// </summary>
         internal static string pockets {
             get {
@@ -529,7 +529,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a leer.
+        ///   Busca una cadena traducida similar a read.
         /// </summary>
         internal static string read {
             get {
@@ -538,7 +538,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Parece que ha habido un error, no puedo encontrar la habitacion..
+        ///   Busca una cadena traducida similar a It seems like I can&apos;t find this room..
         /// </summary>
         internal static string roomNotFound {
             get {
@@ -547,7 +547,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a sur.
+        ///   Busca una cadena traducida similar a south.
         /// </summary>
         internal static string south {
             get {
@@ -556,7 +556,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a suroeste.
+        ///   Busca una cadena traducida similar a southeast.
         /// </summary>
         internal static string southeast {
             get {
@@ -565,7 +565,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a sureste.
+        ///   Busca una cadena traducida similar a southwest.
         /// </summary>
         internal static string southwest {
             get {
@@ -574,7 +574,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Has abierto la cerradura de: [{0}]..
+        ///   Busca una cadena traducida similar a You opened the keylock of: [{0}]..
         /// </summary>
         internal static string unblocked {
             get {
@@ -583,7 +583,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a arriba.
+        ///   Busca una cadena traducida similar a up.
         /// </summary>
         internal static string up {
             get {
@@ -592,7 +592,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a usar.
+        ///   Busca una cadena traducida similar a use.
         /// </summary>
         internal static string use {
             get {
@@ -601,7 +601,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a oeste.
+        ///   Busca una cadena traducida similar a west.
         /// </summary>
         internal static string west {
             get {
@@ -610,7 +610,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a con.
+        ///   Busca una cadena traducida similar a with.
         /// </summary>
         internal static string with {
             get {
@@ -619,7 +619,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a si.
+        ///   Busca una cadena traducida similar a yes.
         /// </summary>
         internal static string yes {
             get {
@@ -628,7 +628,7 @@ namespace TextGameProyect.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Has usado: [{0}].
+        ///   Busca una cadena traducida similar a You used: [{0}].
         /// </summary>
         internal static string you_used {
             get {
