@@ -303,7 +303,7 @@ This is an example of a XML of a EndGame Tale:
 
 This is a list of the things I want to implement in the future, they may or not may be end implemented:
 
-- [ ] Multilenguage (Currently only working in spanish)
+- [x] Multilenguage (Currently only working in spanish)
 - [ ] Puzzles (A container which needs a password to open)
 - [ ] NPCs
 - [ ] Combat system
